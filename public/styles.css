@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+
+img,
+picture,
+svg,
+video {
+max-width: 100%;
+display: block;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #32174d;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    max-width: 500px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+@media (min-width: 758px) {
+    .card {
+        min-height: unset;
+    }
+}
+
+.card button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-inline: auto;
+    background-color: #1c2841 ;
+    border: none;
+    margin-bottom: 1em;
+    padding: .5em 2rem;
+}
+
+.card button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    
+}
+
+
+.card h1 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1c2841;
+    
+}
+
+label, input {
+    display: block;
+    width: 100%;
+}
+
+form {
+    background-color: white;
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    padding: 1rem;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 758px) {
+    form {
+        min-height: unset;
+        padding: 3rem;
+    }
+}
+
+form h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+label {
+    font-size: 12px;
+    font-weight: lighter;
+    color: rgb(146, 142, 142);
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #1c2841 ;
+    border: none;
+    margin-bottom: 1em;
+    padding: .5em 0;
+    margin-top: 1em;
+    color: white;
+    font-weight: 700;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.success-container {
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    max-width: 500px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (min-width: 758px) {
+    .success-container {
+        min-height: unset;
+        padding: 3rem;
+    }
+}
+
+.success-container h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #1c2841;
+}
+
+.success-container p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.login-register {
+    width: 100%;
+    max-width: fit-content;
+    margin-inline: auto;
+    background-color: #1c2841 ;
+    border: none;
+    margin-bottom: 1em;
+    padding: .5em 1em;
+    margin-top: 1em;
+}
+
+.login-register a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/blog/login" method="post">
+        <h1>Login </h1>
+        <h1 class="error-message"><%= message %></h1>
+        <label for="email">Email</label>
+        <input type="email" name="email">
+
+        <label for="password">Password</label>
+        <input type="password" name="password">
+
+        <input type="submit" value="login" class="submit-btn">
+        <button class="login-register"><a href="/blog/register">No account? Register now</a></button>
+    </form>
+    
+</body>
+</html>
